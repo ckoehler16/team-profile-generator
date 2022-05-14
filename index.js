@@ -197,7 +197,38 @@ const promptTeam = () => {
     });
 };
 
-// call function to start prompt
+// function to write the file for the html
+const writeFile = data => {
+    fs.writeFile('./dist/index.html', data, err => {
+        if (err) {
+            console.log(err);
+            return;
+        }
+        else {
+            console.log('The team profile has been created!')
+        }
+    });
+};
+
+// call function to start prompts and generate the html page with user input
 promptManager()
-    .then(promptTeam);
+    // after manager input, prompt the input for the rest of the employees
+    .then(promptTeam)
+
+    // then collect all the employee data to create page with it
+    .then(teamData => {
+        return generatePage(teamData);
+    })
+
+    // create the file as an HTML page
+    .then(pageHTML => {
+        return writeFile(pageHTML);
+    })
+
+    .catch(err => {
+        console.log(err);
+        const myTeamPage = generatePage(err);
+        writeFile(myTeamPage);
+    });
+
 

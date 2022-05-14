@@ -78,9 +78,50 @@ const myTeamPage = function(myTeamInfo) {
         <main>
             <div>
                 <div>
+                    ${myTeamInfo}
                 </div>
             </div>
         </main>
     </body>
     `;
 }
+
+// generate page with the data from the employee array
+generatePage = (data) => {
+
+    // creates the array to hold the employee data
+    employeeArray = [];
+
+    // loop through the data to get the role of each employee
+    for (let i = 0; i < data.length; i++) {
+        const employee = data[i];
+        const role = employee.getRole();
+
+        // if the getRole() function returns manager push the manager's info into employeeArray
+        if (role === 'Manager') {
+            const managerInfo = managerCard(employee);
+            employeeArray.push(managerInfo);
+        }
+
+        // if the getRole() function returns engineer push the engineer's info into the employeeArray
+        if (role === 'Engineer') {
+            const engineerInfo = engineerCard(employee);
+            employeeArray.push(engineerInfo);
+        }
+
+        // if the getRole() function returns intern push the intern's info into the employeeArray
+        if (role === 'Intern') {
+            const internInfo = internCard(employee);
+            employeeArray.push(internInfo);
+        }
+    }
+
+    // join the manager, engineer, and intern info into one place
+    const myTeamInfo = employeeArray.join('');
+
+    // apply the myTeamInfo to the teamPage function to generate and return the team
+    const generateMyTeam = myTeamPage(myTeamInfo);
+    return generateMyTeam;
+}
+
+module.exports = generatePage;
