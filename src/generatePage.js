@@ -1,17 +1,17 @@
 // creates the manager section/card
 const managerCard = function(manager) {
     return `
-    <div (put in size the card will be)>
-        <div (put in what the outer shell of card will look like)>
-            <div (put in header class and look)>
+    <div class="col s12 m4">
+        <div class="card z-depth-4">
+            <div class="card-title cyan darken-3 white-text">
                 <h4>${manager.name}</h4>
-                <h5>Manager</h5>
+                <h5><i class="fa-solid fa-people-roof"></i>Manager</h5>
             </div>
-            <div (put in what card info/content will look like)>
-                <p>ID: ${manager.id}</p>
-                <p>Email: <a href= "mailto:${manager.email}">${manager.email}</a></p>
-                <p>Office Number: ${manager.officeNumber}</p>
-            </div<
+            <ul class="card-content collection">
+                <li class="collection-item">ID: ${manager.id}</li>
+                <li class="collection-item">Email: <a href= "mailto:${manager.email}">${manager.email}</a></li>
+                <li class="collection-item">Office Number: ${manager.officeNumber}</li>
+            </ul>
         </div>
     </div>
     `;
@@ -20,17 +20,17 @@ const managerCard = function(manager) {
 // creates the engineer section/card
 const engineerCard = function(engineer) {
     return `
-    <div (put in size the card will be)>
-        <div (put in what the outer shell of card will look like)>
-            <div (put in header class and look)>
+    <div class="col s12 m4">
+        <div class="card z-depth-4">
+            <div class="card-title cyan darken-3 white-text">
                 <h4>${engineer.name}</h4>
-                <h5>Engineer</h5>
+                <h5><i class="fa-solid fa-gears"></i>Engineer</h5>
             </div>
-            <div (put in what card info/content will look like)>
-                <p>ID: ${engineer.id}</p>
-                <p>Email: <a href= "mailto:${engineer.email}">${engineer.email}</a></p>
-                <p>GitHub: <a href= "https://github.com/${engineer.githubUser}">${engineer.githubUser}</a></p>
-            </div<
+            <ul class="card-content collection">
+                <li class="collection-item">ID: ${engineer.id}</li>
+                <li class="collection-item">Email: <a href= "mailto:${engineer.email}">${engineer.email}</a></li>
+                <li class="collection-item">GitHub: <a href= "https://github.com/${engineer.githubUser}">${engineer.githubUser}</a></li>
+            </ul>
         </div>
     </div>
     `;
@@ -39,17 +39,17 @@ const engineerCard = function(engineer) {
 // creates the intern section/card
 const internCard = function(intern) {
     return `
-    <div (put in size the card will be)>
-        <div (put in what the outer shell of card will look like)>
-            <div (put in header class and look)>
+    <div class="col s12 m4">
+        <div class="card z-depth-4">
+            <div class="card-title cyan darken-3 white-text">
                 <h4>${intern.name}</h4>
-                <h5>Intern</h5>
+                <h5><i class="fa-solid fa-chalkboard-user"></i>Intern</h5>
             </div>
-            <div (put in what card info/content will look like)>
-                <p>ID: ${intern.id}</p>
-                <p>Email: <a href= "mailto:${intern.email}">${intern.email}</a></p>
-                <p>School: ${intern.school}</p>
-            </div<
+            <ul class="card-content collection">
+                <li class="collection-item">ID: ${intern.id}</li>
+                <li class="collection-item">Email: <a href= "mailto:${intern.email}">${intern.email}</a></li>
+                <li class="collection-item">School: ${intern.school}</li>
+            </ul>
         </div>
     </div>
     `;
@@ -67,21 +67,28 @@ const myTeamPage = function(myTeamInfo) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Team Profile Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <nav>
-                <span>My Team</span>
-            </nav>
+        <header class="red lighten-2">
+            <h2 class="white-text center">My Team</h2>
         </header>
-        <main>
-            <div>
-                <div>
-                    ${myTeamInfo}
+        <main class="valign-wrapper>
+            <div class="valign-wrapper" style="width:100%;height:100%;">
+                <div class="valign" style="width:100%;">
+                    <div class="container">
+                        <div class="row">
+                            ${myTeamInfo}
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://kit.fontawesome.com/91a4da6089.js" crossorigin="anonymous"></script>
     </body>
     `;
 }
