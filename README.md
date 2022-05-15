@@ -1,1 +1,47 @@
-# team-profile-generator
+# Team Profile Generator
+
+![badge](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Questions](#questions)
+
+## Description
+
+As a developer I wanted to create and application that would generate a team profile webpage for a software engineering company through the command line using Node.js. This application uses the npm Inquirer to prompt a user's input about the employees on the company's team and generates an HTML webpage based on the input.
+
+## Installation
+
+1. Go the the link provided and clone the files to your computer:
+    - [Link to Files](https://github.com/ckoehler16/team-profile-generator)
+2. Next make sure you have Node.js installed on your computer.
+3. Once Node.js is installed, make sure you are in the root of your project and run the command:
+    - npm init
+4. Answer the prompts to create your package.json file.
+5. Next install the 'Inquirer' package by entering the following command:
+    - npm install inquirer
+6. Once 'Inquirer' is installed please make sure that you add the 'node_modules' folder to your .gitigore file so they will not be tracked.
+7. Lastly type the following in the command-line and answer the questions to have a company team profile webpage!
+    - node index.js
+
+## Usage
+
+I will put something here... screencastify video
+
+## License
+
+MIT License
+
+For more information on this license go to:
+- [MIT License](https://choosealicense.com/licenses/mit/)
+
+## Questions
+
+For question regarding this application or ways that you can contribute please feel free to contact me via:
+
+- GitHub: [ckoehler16](https://github.com/ckoehler16)
+- Email: ckoehler16@gmail.com
+
