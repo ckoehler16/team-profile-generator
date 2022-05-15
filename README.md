@@ -13,6 +13,7 @@
 
 As a developer I wanted to create and application that would generate a team profile webpage for a software engineering company through the command line using Node.js. This application uses the npm Inquirer to prompt a user's input about the employees on the company's team and generates an HTML webpage based on the input.
 
+
 ## Installation
 
 1. Go the the link provided and clone the files to your computer:
@@ -31,7 +32,7 @@ As a developer I wanted to create and application that would generate a team pro
 
 Here is a link to the video showing how the application passes through all the unit tests from the command line, how to invoke the application through the command line by typing 'node index.js', and how to answer the prompts and finish the input to generate an HTML webpage that includes exactly what the user typed. The video then goes on to show you the webpage that is generated and the functionality of the page but clicking on an email address and an engineer's GitHub.
 
-![Team Profile Video](file:///Volumes/GoogleDrive/My%20Drive/Screencastify/Untitled:%20May%2015,%202022%203:28%20PM.webm)
+![Team Profile Video](https://drive.google.com/file/d/1XfunVd3I-NXCCEo1Cj5iw7XPqXoq7ddf/view)
 
 ## License
 
