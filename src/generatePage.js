@@ -29,7 +29,7 @@ const engineerCard = function(engineer) {
             <ul class="card-content collection">
                 <li class="collection-item">ID: ${engineer.id}</li>
                 <li class="collection-item">Email: <a href= "mailto:${engineer.email}">${engineer.email}</a></li>
-                <li class="collection-item">GitHub: <a href= "https://github.com/${engineer.githubUser}">${engineer.githubUser}</a></li>
+                <li class="collection-item">GitHub: <a href= "https://github.com/${engineer.githubUser}" target="_blank">${engineer.githubUser}</a></li>
             </ul>
         </div>
     </div>

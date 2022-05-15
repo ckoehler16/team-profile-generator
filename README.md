@@ -29,7 +29,9 @@ As a developer I wanted to create and application that would generate a team pro
 
 ## Usage
 
-I will put something here... screencastify video
+Here is a link to the video showing how the application passes through all the unit tests from the command line, how to invoke the application through the command line by typing 'node index.js', and how to answer the prompts and finish the input to generate an HTML webpage that includes exactly what the user typed. The video then goes on to show you the webpage that is generated and the functionality of the page but clicking on an email address and an engineer's GitHub.
+
+![Team Profile Video](https://drive.google.com/file/d/1XfunVd3I-NXCCEo1Cj5iw7XPqXoq7ddf/view)
 
 ## License
 

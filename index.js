@@ -78,7 +78,7 @@ const promptManager = () => {
 
             // put manager data into the teamData array
             teamData.push(manager);
-            console.log(manager);
+            //console.log(manager);
         })
 };
 
@@ -175,17 +175,17 @@ const promptTeam = () => {
 
         if (teamMemberRole === 'Add Engineer') {
             employee = new Engineer (name, id, email, githubUser);
-            console.log(employee);
+            //console.log(employee);
         }
 
         if (teamMemberRole === 'Add Intern') {
             employee = new Intern (name, id, email, school);
-            console.log(employee);
+            //console.log(employee);
         }
 
         // take the employee data and add it to the teamData array
         teamData.push(employee);
-        console.log(teamData);
+        //console.log(teamData);
 
         // run promptTeam if addTeamMember is performed
         if (addTeamMember) {
@@ -205,6 +205,7 @@ const writeFile = data => {
             return;
         }
         else {
+            console.log(teamData);
             console.log('The team profile has been created!')
         }
     });
