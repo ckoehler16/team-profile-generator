@@ -1,0 +1,32 @@
+header {
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h4 {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+h5 {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.row {
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    justify-content: center;
+}
+
+i {
+    padding-right: 5px;
+}
